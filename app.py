@@ -28,8 +28,8 @@ def home():
         f"/api/v1.0/precipitation<br/>"
         f"/api/v1.0/stations<br/>"
         f"/api/v1.0/tobs<br/>"
-        # f"/api/v1.0/<start><br/>"
-        # f"/api/v1.0/<start>/<end><br/>"
+        f"/api/v1.0/<start><br/>"
+        f"/api/v1.0/<start>/<end><br/>"
     )
 
 
@@ -73,8 +73,15 @@ def tobs():
 
     return jsonify(query_tobs)
 
-@app.route("/api/v1.0/<start>")
-def <start>():
+# @app.route("/api/v1.0/<start>")
+# def <start>():
+
+#     session = Session(engine)
+
+# @app.route("/api/v1.0/<start>/<end>")
+# def <start>/<end>():
+
+#     session = Session(engine)    
 
 
 if __name__ == '__main__':
